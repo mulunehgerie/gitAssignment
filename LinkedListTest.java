@@ -2,7 +2,7 @@ import java.util.LinkedList;
 
 public class LinkedListTest {
 
-     @Test
+    @Test
     public void testAdd() {
         LinkedList list = new LinkedList();
         list.add(1);
@@ -10,6 +10,19 @@ public class LinkedListTest {
         list.add(3);
         list.add(4);
         list.add(5);
+        list.printList();
+    }
+
+    @Test
+    public void testRemove() {
+        LinkedList list = new LinkedList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.remove(3);
+        System.out.println("List after remove");
         list.printList();
     }
 }
