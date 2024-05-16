@@ -68,5 +68,4 @@ public class LinkedList {
         }
         System.out.println();
     }
-    // demo
 }
