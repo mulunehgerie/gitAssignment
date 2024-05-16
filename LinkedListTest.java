@@ -25,10 +25,24 @@ public class LinkedListTest {
         System.out.println("List after remove");
         list.printList();
     }
+
     @Test
     public void testEmptyList() {
         LinkedList list = new LinkedList();
         assertTrue(list.isEmpty());
         assertEquals(0, list.size());
+    }
+
+    @Test
+    public void testContains() {
+        LinkedList list = new LinkedList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        assertTrue(list.contains(3));
+        assertFalse(list.contains(6));
     }
 }
